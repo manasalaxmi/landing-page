@@ -3,7 +3,7 @@
 This is a landing page built as part of The Odin Project curriculum.  
 It uses HTML and CSS to replicate a given design.
 
-Wellness Landing Page 🌿
+Wellness Landing Page 
 
 This is a simple, responsive landing page for a fictional wellness brand.
 - Responsive design
