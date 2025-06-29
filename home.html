@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serenity Wellness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #bad5e7;
+      --secondary: #F1FAEE;
+      --accent: #5499c4;
+      --text: #4f74a8;
+      --bg: #FAF9F6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman',serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--secondary);
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    header h1 span {
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .hero {
+      background-color: var(--primary);
+      padding: 4rem 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero .text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero .text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .text p {
+      margin-bottom: 1.5rem;
+      max-width: 500px;
+    }
+
+    .btn {
+      background-color: var(--accent);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #355e75;
+    }
+
+    .hero .image {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .hero .image img {
+      max-width: 100%;
+      border-radius: 1rem;
+    }
+
+    .features {
+  padding: 4rem 0;
+  background-color: #f7fafa;
+  text-align: center;
+}
+
+.feature-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #eaf4f4;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.feature-wrapper h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #264653;
+}
+
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1 1 22%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1d3557;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+    .quote {
+  background-color: #eef5fa;
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 10px;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+}
+
+.quote span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #457B9D;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: var(--secondary);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <h1>Serenity<span>Wellness</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Our Program</a></li>
+          <li><a href="#">Benefits</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="text">
+        <h2>Find Your Inner Calm</h2>
+        <p>SerenityWellness guides you to a balanced life with daily mindfulness, guided meditations, and gentle rituals. Begin your journey to well-being today.</p>
+        <a href="#" class="btn">Start Free Trial</a>
+      </div>
+      <div class="image">
+        <img src="https://ehealth.eletsonline.com/wp-content/uploads/2020/12/Yoga-and-Spirituality.jpg" />
+      </div>
+    </div>
+  </section>
+
+<section class="features">
+  <div class="feature-wrapper">
+    <h3>Why choose SerenityWellness?</h3>
+    <div class="feature-row">
+      <div class="feature-card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/007/538/952/small/woman-meditating-in-nature-lotus-yoga-pose-healthy-lifestyle-loop-animation-4k-hd-video.jpg" alt="Meditation">
+        <h4>Calm Mind</h4>
+        <p>Guided meditations to bring peace to your day.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://www.justathought.co.nz/uploads/microsoft_teams_image_20-c70df5b0edffb7c6040e1ecd9247c943.png" alt="Sleep">
+        <h4>Better Sleep</h4>
+        <p>Soundscapes and routines for restful nights.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://innerspacetherapy.in/wp-content/uploads/2023/02/Young-man-practicing-yoga-exercises-for-mental-and-body-health-1024x683.jpg" alt="Mindfulness">
+        <h4>Mindful Living</h4>
+        <p>Build a life of presence and purpose.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://www.mindful.org/content/uploads/New-2.jpg" alt="Community">
+        <h4>Supportive Community</h4>
+        <p>Grow together in a caring environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <section class="quote">
+  <p>“Your mind is a powerful thing. When you start to filter it with positive thoughts your life will start to change.”</p>
+  <span>– Gauthama Buddha</span>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Serenity Wellness. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
